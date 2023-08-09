@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function Home(props) {
+  const navigate=useNavigate();
+  const handleClick=()=>{
+    navigate('/login');
+  }
   return (
     <div>
       <div>
@@ -23,6 +28,9 @@ function Home(props) {
       <br />
 
       <h2>{props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
+      <div>
+          <button onClick={handleClick}>Log Out</button>
+        </div>
     </div>
   );
 }

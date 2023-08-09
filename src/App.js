@@ -26,7 +26,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<VerifyEmailButton />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/completeprofile" element={<Completeprofile name={userName}/>}/>
           <Route path="/" element={<Home name={userName} />} />
         </Routes>
