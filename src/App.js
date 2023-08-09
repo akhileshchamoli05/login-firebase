@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import Completeprofile from "./components/Completeprofile/Completeprofile";
-
+import VerifyEmailButton from "./components/VerifyEmailButton/VerifyEmailButton";
 import { auth } from "./firebase";
 
 import "./App.css";
@@ -26,8 +26,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/completeprofile" element={<Completeprofile/>}/>
+          <Route path="/signup" element={<VerifyEmailButton />} />
+          <Route path="/completeprofile" element={<Completeprofile name={userName}/>}/>
           <Route path="/" element={<Home name={userName} />} />
         </Routes>
       </Router>

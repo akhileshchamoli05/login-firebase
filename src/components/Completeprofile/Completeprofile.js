@@ -2,10 +2,11 @@ import React from "react";
 import {useState} from 'react';
 const Completeprofile=(props)=>
 { 
-   const [n,setName]=useState("hello");
+   const [n,setName]=useState("");
 
     const updateHandler=()=>
     {
+
     setName("fill");
     }
     console.log(n);
